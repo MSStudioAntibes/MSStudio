@@ -65,6 +65,10 @@ img{max-width:100%;display:block}
 .hero .ey{color:var(--rose-l)}
 .h1{font-family:var(--fd);font-size:clamp(42px,6vw,80px);font-weight:600;line-height:1.05;color:#fff;margin-bottom:22px}
 .h1 em{font-style:italic;color:var(--rose-l)}
+.h-head{position:relative;z-index:1;margin-bottom:34px}
+.h-head .h1{font-size:clamp(40px,6.1vw,72px);margin-bottom:0}
+.h1-l{display:block;width:max-content;white-space:nowrap}
+@media(max-width:900px){.h1-l{white-space:normal;display:inline;width:auto}}
 .h-sub{font-size:18px;color:rgba(255,255,255,.68);margin-bottom:38px;line-height:1.65;max-width:460px}
 .h-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:54px}
 .h-stats{display:flex;gap:36px;padding-top:36px;border-top:1px solid rgba(255,255,255,.12)}
@@ -371,11 +375,13 @@ mark.todo{background:#FFE58A;color:#5D4037;padding:1px 6px;border-radius:4px;fon
 <!-- ═══════ 1. HERO ═══════ -->
 <section class="hero">
   <div class="c hero-inner">
+    <div class="h-head rv in">
+      <span class="ey">Formation Professionnelle · Antibes · PACA</span>
+      <h1 class="h1"><span class="h1-l">Devenez l'experte du regard</span> <span class="h1-l">que vous avez toujours <em>voulu être</em></span></h1>
+    </div>
     <div class="h-grid">
       <div class="rv in">
-        <span class="ey">Formation Professionnelle · Antibes · PACA</span>
-        <h1 class="h1">Devenez l'experte<br>du regard que vous<br>avez toujours <em>voulu être</em></h1>
-        <p class="h-sub">Marion vous accompagne pas à pas pour maîtriser extensions de cils, lash lift et browlift. 10 ans d'expertise, partenaire Altea Beauty, finançable CPF.</p>
+        <p class="h-sub">Marion vous accompagne pas à pas pour maîtriser extensions de cils, lash lift et browlift. 10 ans d'expertise, partenaire Altea Beauty.</p>
         <div class="h-btns">
           <a href="#formulaire" class="btn btn-coral">Je réserve ma place →</a>
           <a href="#programme" class="btn btn-ghost">Voir le programme</a>
@@ -428,15 +434,16 @@ mark.todo{background:#FFE58A;color:#5D4037;padding:1px 6px;border-radius:4px;fon
       <div class="marion-body rv">
         <span class="ey">Votre formatrice</span>
         <h2>Marion, experte du regard<br><em>qui vous transmet tout</em></h2>
-        <p class="marion-bio">Passionnée par la beauté du regard depuis plus de dix ans, Marion a fondé MS Studio Antibes pour offrir des prestations d'exception et transmettre son savoir-faire aux professionnelles de la beauté en PACA. Ce qui la distingue ? Une exigence absolue sur la technique, une pédagogie bienveillante, et la conviction que chaque esthéticienne ou maquilleuse mérite une formation qui lui permette de se démarquer immédiatement.</p>
+        <p class="marion-bio" style="margin-bottom:16px"><strong style="color:var(--plum)">En 2026, Marion devient vice-championne du concours international Swiss&nbsp;Lash&nbsp;Elevation</strong> en <strong style="color:var(--plum)">lash lift</strong> (sur 29 candidates) et en <strong style="color:var(--plum)">effet eye-liner</strong>. Une reconnaissance rare pour une formatrice qui exerce encore chaque jour en cabine.</p>
+        <p class="marion-bio">Ce sont ces gestes, ceux du podium, qu'elle vous apprend. En tout petit groupe, sur un vrai modèle, avec ses corrections à chaque étape. Vous repartez prête à proposer la prestation à vos clientes dès votre retour.</p>
         <div class="marion-creds">
           <div class="mc">
             <div class="mc-ico">🏆</div>
-            <div class="mc-txt"><strong>Partenaire officiel Altea Beauty</strong><span>Marque de référence des produits cils professionnels en France</span></div>
+            <div class="mc-txt"><strong>Vice-championne Swiss Lash Elevation 2026</strong><span>Concours international · Lash lift (sur 29 candidates) et effet eye&#8209;liner</span></div>
           </div>
           <div class="mc">
-            <div class="mc-ico">👁️</div>
-            <div class="mc-txt"><strong>Spécialiste du regard</strong><span>Extensions de cils, Lash Lift, Browlift — maîtrise complète des techniques regard</span></div>
+            <div class="mc-ico">🤝</div>
+            <div class="mc-txt"><strong>Partenaire officiel Altea Beauty</strong><span>Marque de référence des produits cils professionnels en France</span></div>
           </div>
           <div class="mc">
             <div class="mc-ico">👥</div>
@@ -533,7 +540,7 @@ mark.todo{background:#FFE58A;color:#5D4037;padding:1px 6px;border-radius:4px;fon
       </div>
       <div class="fi">
         <button class="fq">Puis-je bénéficier d'un financement pour la formation ?<span class="ic">+</span></button>
-        <div class="fa"><p>Oui, cette formation est finançable via le CPF (Compte Personnel de Formation) pour un montant de 1 500 €. D'autres dispositifs (OPCO pour les salariées, Agefice pour les indépendantes) peuvent aussi s'appliquer selon votre statut. Contactez-nous avant votre inscription pour vérifier votre éligibilité et être accompagnée dans les démarches.</p></div>
+        <div class="fa"><p>Selon votre statut, des dispositifs de prise en charge peuvent s'appliquer : OPCO pour les salariées, Agefice pour les indépendantes. Contactez-nous avant votre inscription pour vérifier votre éligibilité et être accompagnée dans les démarches.</p></div>
       </div>
       <div class="fi">
         <button class="fq">Comment réserver ma place et quel est le délai ?<span class="ic">+</span></button>
@@ -573,7 +580,7 @@ mark.todo{background:#FFE58A;color:#5D4037;padding:1px 6px;border-radius:4px;fon
           <div class="sp-arr">→</div>
           <div class="sp-ci"><strong>+11 500 €</strong><span>de CA supplémentaire<br>sur la première année</span></div>
           <div class="sp-arr">→</div>
-          <div class="sp-ci"><strong>× 33</strong><span>le coût de la<br>formation remboursé</span></div>
+          <div class="sp-ci"><strong>× 7</strong><span>le coût de la<br>formation remboursé</span></div>
         </div>
       </div>
     </div>
@@ -972,6 +979,22 @@ window.addEventListener('hashchange', routeLegal);
 document.querySelectorAll('.lg-close').forEach(b => b.addEventListener('click', closeLegal));
 document.querySelectorAll('.cookie-open').forEach(a => a.addEventListener('click', e => { e.preventDefault(); closeLegal(); ck.classList.add('on'); }));
 routeLegal();
+</script>
+<script>
+(function(){
+  var h=document.querySelector('.h-head .h1'); if(!h) return;
+  function fit(){
+    h.style.fontSize='';
+    if(window.innerWidth<=900) return;
+    var ls=h.querySelectorAll('.h1-l'), w=h.clientWidth, m=0;
+    ls.forEach(function(l){m=Math.max(m,l.scrollWidth);});
+    if(!m) return;
+    var fs=parseFloat(getComputedStyle(h).fontSize);
+    h.style.fontSize=Math.min(fs*w/m*0.995,110)+'px';
+  }
+  fit(); window.addEventListener('resize',fit);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+})();
 </script>
 </body>
 </html>
