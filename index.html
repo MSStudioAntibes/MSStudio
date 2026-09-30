@@ -70,6 +70,8 @@ img{max-width:100%;display:block}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 68% 45%,rgba(196,114,138,.18) 0%,transparent 60%)}
 .h-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
 .hero .ey{color:var(--rose-l)}
+.ey.ey-lg{font-size:16px;letter-spacing:.2em;margin-bottom:16px}
+@media(max-width:600px){.ey.ey-lg{font-size:14px}}
 .h1{font-family:var(--fd);font-size:clamp(42px,6vw,80px);font-weight:600;line-height:1.05;color:#fff;margin-bottom:22px}
 .h1 em{font-style:italic;color:var(--rose-l)}
 .h-head{position:relative;z-index:1;margin-bottom:48px}
@@ -109,7 +111,7 @@ img{max-width:100%;display:block}
 @media(max-width:600px){.marion-creds{grid-template-columns:1fr}}
 
 /* ── USP */
-.usp{padding:var(--pad) 0;background:var(--cream)}
+.usp{padding:calc(var(--pad) * .5) 0 var(--pad);background:var(--cream)}
 .usp-g{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .uc{background:#fff;border:1px solid var(--sand);border-radius:var(--r);padding:34px 26px;text-align:center;transition:all .3s ease}
 .uc:hover{transform:translateY(-6px);box-shadow:0 14px 44px rgba(30,11,44,.1);border-color:var(--rose-l)}
@@ -486,7 +488,6 @@ mark.todo{background:#FFE58A;color:#5D4037;padding:1px 6px;border-radius:4px;fon
           </div>
         </div>
         <a href="#formulaire" class="btn btn-coral">Je réserve ma place →</a>
-        <p class="marion-sig">— Marion, Fondatrice MS Studio</p>
       </div>
   </div>
 </section>
@@ -496,7 +497,7 @@ mark.todo{background:#FFE58A;color:#5D4037;padding:1px 6px;border-radius:4px;fon
 <section class="usp">
   <div class="c">
     <div class="sh rv">
-      <span class="ey">Pourquoi MS Studio</span>
+      <span class="ey ey-lg">Pourquoi MS Studio</span>
       <h2>Une formation pensée<br>pour la pratique</h2>
       <p>Chaque détail est pensé pour que vous repartiez avec des techniques applicables dès votre retour en cabine.</p>
     </div>
